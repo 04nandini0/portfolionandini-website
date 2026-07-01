@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO META TAGS -->
+  <!-- TODO: Replace "Your Name" with your actual name throughout this file -->
+  <title>Nandini Sharma | Software Engineer</title>
+  <meta name="description" content="Portfolio of Nandini Sharma, a Software Engineer who builds scalable digital experiences and solves real-world problems through technology." />
+  <meta name="author" content="Nandini Sharma" />
+  <meta name="theme-color" content="#0B0F19" />
+
+  <!-- Open Graph / Social preview tags -->
+  <meta property="og:title" content="Nandini Sharma | Software Engineer" />
+  <meta property="og:description" content="I build scalable digital experiences and solve real-world problems through technology." />
+  <meta property="og:type" content="website" />
+  <!-- TODO: Add your portfolio's live URL once deployed -->
+  <meta property="og:url" content="https://yourdomain.com" />
+
+  <!-- Favicon -->
+  <!-- TODO: Add your own favicon inside assets/icons -->
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- =============================
+       NAVBAR
+  ============================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#home" class="navbar__logo">
+        <span class="navbar__logo-mark">&lt;NS/&gt;</span>
+      </a>
+
+      <nav class="navbar__nav" id="navbar-nav">
+        <ul class="navbar__links">
+          <li><a href="#home" class="navbar__link active" data-link>Home</a></li>
+          <li><a href="#about" class="navbar__link" data-link>About</a></li>
+          <li><a href="#skills" class="navbar__link" data-link>Skills</a></li>
+          <li><a href="#projects" class="navbar__link" data-link>Projects</a></li>
+          <li><a href="#experience" class="navbar__link" data-link>Experience</a></li>
+          <li><a href="#contact" class="navbar__link" data-link>Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+          </svg>
+          <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar-nav">
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+          <span class="navbar__toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =============================
+         HERO SECTION
+    ============================== -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content fade-up">
+          <p class="hero__eyebrow"><span class="hero__dot"></span> Available for opportunities</p>
+
+          <h1 class="hero__title">
+            Hi, I'm <span class="text-gradient">Nandini Sharma</span>
+          </h1>
+
+          <h2 class="hero__role">
+            Software Engineer
+            <span class="hero__cursor" aria-hidden="true">|</span>
+          </h2>
+
+         
+          <p class="hero__subtitle">
+            I build scalable digital experiences and solve real-world problems through technology —
+            turning ideas into functional software products from the ground up.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View Projects</a>
+            <a href="assets\resume\Nandini Resume.pdf" class="btn btn--secondary" download>Download CV</a>
+            <a href="#contact" class="btn btn--ghost">Contact Me</a>
+          </div>
+
+          <div class="hero__tech">
+            <span class="hero__tech-label">Working with</span>
+            <div class="hero__tech-icons">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">CSS</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">Git</span>
+              <span class="tech-pill">SQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual fade-up" style="--delay: 0.15s">
+          <div class="hero__avatar-frame">
+            <!-- TODO: Add your professional profile image inside assets/images (recommended: profile.png, square aspect ratio) -->
+            <img src="assets/images/profile.jpg" alt="Portrait of Nandini Sharma, Software Engineer" class="hero__avatar" />
+            <div class="hero__avatar-ring"></div>
+          </div>
+
+          <!-- Floating technology icons -->
+          <div class="floating-icons" aria-hidden="true">
+            <span class="floating-icon floating-icon--1">JS</span>
+            <span class="floating-icon floating-icon--2">PY</span>
+            <span class="floating-icon floating-icon--3">JAVA</span>
+            <span class="floating-icon floating-icon--4">DB</span>
+            <span class="floating-icon floating-icon--5">git</span>
+          </div>
+
+          <!-- Subtle coding animation card -->
+          <div class="code-card" aria-hidden="true">
+            <div class="code-card__header">
+              <span class="code-dot code-dot--red"></span>
+              <span class="code-dot code-dot--yellow"></span>
+              <span class="code-dot code-dot--green"></span>
+              <span class="code-card__title">main.js</span>
+            </div>
+            <pre class="code-card__body"><code id="typing-code"></code><span class="code-card__cursor"></span></pre>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-indicator__mouse"></span>
+      </a>
+    </section>
+
+    <!-- =============================
+         ABOUT SECTION
+    ============================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__header fade-up">
+          <p class="section__eyebrow">About</p>
+          <h2 class="section__title">Building software with purpose</h2>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__text fade-up">
+            <!-- TODO: Replace this introduction with your own background and story -->
+            <p>
+              I'm a software developer focused on building functional, user-centered applications
+              rather than just visuals. My interest lies in solving real problems with clean code,
+              thoughtful architecture, and a product mindset.
+            </p>
+            <p>
+              Currently pursuing a <strong>Bachelor of Technology in Computer Science Engineering</strong>,
+              I spend my time learning new languages, frameworks, and tools, then applying them to
+              projects that mirror real-world software, from e-commerce platforms to interactive
+              productivity tools.
+            </p>
+            <p>
+              My goal is to grow into a well-rounded software engineer capable of working across the
+              stack — designing systems, writing reliable backend logic, and building interfaces that
+              people genuinely enjoy using.
+            </p>
+
+            <div class="about__highlights">
+              <div class="highlight">
+                <span class="highlight__icon">🎯</span>
+                <div>
+                  <h3>Problem Solving</h3>
+                  <p>Breaking down complex problems into clean, maintainable solutions.</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon">⚙️</span>
+                <div>
+                  <h3>Real Products</h3>
+                  <p>Building complete applications, not just isolated components.</p>
+                </div>
+              </div>
+              <div class="highlight">
+                <span class="highlight__icon">📚</span>
+                <div>
+                  <h3>Continuous Learning</h3>
+                  <p>Constantly exploring new tools, languages, and best practices.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about__timeline fade-up" style="--delay: 0.1s">
+            <h3 class="about__timeline-title">Education</h3>
+
+            <!-- TODO: Replace with your actual education timeline -->
+            <div class="timeline">
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <span class="timeline__date">2024 — Present</span>
+                  <h4>B.Tech in Computer Science Engineering</h4>
+                  <p>Vivekananda Global University</p>
+                  <p>Grade:8.3 CGPA</p>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <span class="timeline__date">2023 — 2024</span>
+                  <h4>Senior Secondary Education</h4>
+                  <p>Rawat Public School</p>
+                  <P>Score:79.33%</P>
+                </div>
+              </div>
+
+              <div class="timeline__item">
+                <div class="timeline__marker"></div>
+                <div class="timeline__content">
+                  <span class="timeline__date">2021 — 2022</span>
+                  <h4>Secondary Education</h4>
+                  <p>Rawat Public School</p>
+                  <P>Score:78.60%</P>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         SKILLS SECTION
+    ============================== -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <div class="section__header fade-up">
+          <p class="section__eyebrow">Skills</p>
+          <h2 class="section__title">Tools &amp; technologies I work with</h2>
+        </div>
+
+        <div class="skills__grid">
+          <!-- Programming Languages -->
+          <div class="skill-category fade-up">
+            <h3 class="skill-category__title">Programming Languages</h3>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="skill__head"><span>JavaScript</span><span class="skill__pct">85%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 85%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>Python</span><span class="skill__pct">80%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 80%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>Java</span><span class="skill__pct">75%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 75%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>C</span><span class="skill__pct">70%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 70%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend -->
+          <div class="skill-category fade-up" style="--delay: 0.05s">
+            <h3 class="skill-category__title">Frontend Development</h3>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="skill__head"><span>HTML</span><span class="skill__pct">90%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 90%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>CSS</span><span class="skill__pct">88%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 88%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>JavaScript (DOM)</span><span class="skill__pct">82%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 82%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>Responsive Design</span><span class="skill__pct">85%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 85%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend / Database -->
+          <div class="skill-category fade-up" style="--delay: 0.1s">
+            <h3 class="skill-category__title">Backend &amp; Database</h3>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="skill__head"><span>REST APIs</span><span class="skill__pct">70%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 70%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>SQL</span><span class="skill__pct">72%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 72%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>Database Design</span><span class="skill__pct">68%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 68%"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skill-category fade-up" style="--delay: 0.15s">
+            <h3 class="skill-category__title">Tools &amp; Workflow</h3>
+            <div class="skill-list">
+              <div class="skill">
+                <div class="skill__head"><span>Git</span><span class="skill__pct">85%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 85%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>GitHub</span><span class="skill__pct">85%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 85%"></div></div>
+              </div>
+              <div class="skill">
+                <div class="skill__head"><span>VS Code</span><span class="skill__pct">90%</span></div>
+                <div class="skill__bar"><div class="skill__fill" style="--value: 90%"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         PROJECTS SECTION
+    ============================== -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__header fade-up">
+          <p class="section__eyebrow">Projects</p>
+          <h2 class="section__title">Things I've built</h2>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="filters fade-up" role="tablist" aria-label="Project category filters">
+          <button class="filter active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter" data-filter="web-apps" role="tab" aria-selected="false">Web Apps</button>
+          <button class="filter" data-filter="ui-projects" role="tab" aria-selected="false">UI Projects</button>
+          <button class="filter" data-filter="js-projects" role="tab" aria-selected="false">JavaScript Projects</button>
+        </div>
+
+        <div class="projects__grid" id="projects-grid">
+
+          <!-- Project 1: Pizzeria Italia -->
+          <article class="project-card fade-up" data-category="ui-projects web-apps">
+            <div class="project-card__image">
+              <!-- TODO: Replace with a screenshot of your project inside assets/images -->
+              <img src="assets/images/project-pizzeria.png" alt="Screenshot of the Pizzeria Italia restaurant website" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Pizzeria Italia</h3>
+              <p class="project-card__desc">A responsive restaurant website featuring an elegant menu showcase, smooth UI animations, and a polished dining-brand experience.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-card__links">
+                <!-- TODO: Add your GitHub repository URL -->
+                <a href="https://github.com/04nandini0/pizzeria-italia.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- TODO: Add your live demo URL -->
+                <a href="https://pizzeriaitalia.netlify.app/" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Bloom Beauty -->
+          <!-- TODO: Replace project name, description, GitHub link, and live demo link -->
+          <article class="project-card fade-up" data-category="web-apps" style="--delay: 0.05s">
+            <div class="project-card__image">
+              <!-- TODO: Replace with a screenshot of your project inside assets/images -->
+              <img src="assets/images/project-bloom.png" alt="Screenshot of the Bloom Beauty e-commerce platform" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Bloom Beauty</h3>
+              <p class="project-card__desc">A skincare e-commerce platform with product filtering, a shopping cart system, and persistent storage using LocalStorage.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <div class="project-card__links">
+                <!-- TODO: Add your GitHub repository URL -->
+                <a href="https://github.com/04nandini0/Bloom-Beauty-Premium-Skincare-E-Commerce-Store.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- TODO: Add your live demo URL -->
+                <a href="https://bbloombeauty.netlify.app/" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Peel & Pin -->
+          <!-- TODO: Replace project name, description, GitHub link, and live demo link -->
+          <article class="project-card fade-up" data-category="js-projects web-apps" style="--delay: 0.1s">
+            <div class="project-card__image">
+              <!-- TODO: Replace with a screenshot of your project inside assets/images -->
+              <img src="assets/images/project-peelpin.png" alt="Screenshot of the Peel and Pin sticky note application" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Peel &amp; Pin</h3>
+              <p class="project-card__desc">A creative sticky-note application with rich drag-and-drop interactions, dynamic DOM manipulation, and persistent local storage.</p>
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">DOM</span>
+                <span class="tag">Drag &amp; Drop</span>
+              </div>
+              <div class="project-card__links">
+                <!-- TODO: Add your GitHub repository URL -->
+                <a href="https://github.com/04nandini0/Peel-Pin.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- TODO: Add your live demo URL -->
+                <a href="https://peelnpin.netlify.app/" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: NovaCalc -->
+          <!-- TODO: Replace project name, description, GitHub link, and live demo link -->
+          <article class="project-card fade-up" data-category="js-projects" style="--delay: 0.15s">
+            <div class="project-card__image">
+              <!-- TODO: Replace with a screenshot of your project inside assets/images -->
+              <img src="assets/images/project-novacalc.png" alt="Screenshot of the NovaCalc scientific calculator" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">NovaCalc</h3>
+              <p class="project-card__desc">A scientific calculator handling complex mathematical operations with a clean interface and precise JavaScript logic.</p>
+              <div class="project-card__tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">Math Logic</span>
+                <span class="tag">UI</span>
+              </div>
+              <div class="project-card__links">
+                <!-- TODO: Add your GitHub repository URL -->
+                <a href="https://github.com/04nandini0/nova-calc.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- TODO: Add your live demo URL -->
+                <a href="https://novaacalc.netlify.app/" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5: Spotify Clone -->
+          <article class="project-card fade-up" data-category="ui-projects web-apps">
+            <div class="project-card__image">
+              <img src="assets/images/project-spot.png" alt="Screenshot of the Pizzeria Italia restaurant website" loading="lazy" />
+            </div>
+            <div class="project-card__body">
+              <h3 class="project-card__title">Groovebox Music Player</h3>
+              <p class="project-card__desc">A Spotify-inspired music player UI recreation built with HTML, CSS, and Vanilla JavaScript by Nandini Sharma.</p>
+              <div class="project-card__tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-card__links">
+                <!-- TODO: Add your GitHub repository URL -->
+                <a href="https://github.com/04nandini0/groovebox-music-player.git" class="btn btn--small btn--ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <!-- TODO: Add your live demo URL -->
+                <a href="https://groovebox-music-player.netlify.app/" class="btn btn--small btn--primary" target="_blank" rel="noopener noreferrer">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__empty" id="projects-empty" hidden>No projects found in this category yet.</p>
+      </div>
+    </section>
+
+    <!-- =============================
+         EXPERIENCE / JOURNEY SECTION
+    ============================== -->
+    <section class="section section--alt" id="experience">
+      <div class="container">
+        <div class="section__header fade-up">
+          <p class="section__eyebrow">Journey</p>
+          <h2 class="section__title">My growth as a developer</h2>
+        </div>
+
+        <!-- TODO: Replace with your own learning journey, milestones, and goals -->
+        <div class="journey">
+          <div class="journey__item fade-up">
+            <div class="journey__marker">
+              <span class="journey__icon">🚀</span>
+            </div>
+            <div class="journey__content">
+              <span class="journey__date">2024</span>
+              <h3>Started learning Web Development</h3>
+              <p>Began with HTML, CSS, and JavaScript fundamentals — building small static websites and understanding how the web works.</p>
+            </div>
+          </div>
+
+          <div class="journey__item fade-up" style="--delay: 0.05s">
+            <div class="journey__marker">
+              <span class="journey__icon">🛠️</span>
+            </div>
+            <div class="journey__content">
+              <span class="journey__date">2024-2025</span>
+              <h3>Built first real-world projects</h3>
+              <p>Developed Pizzeria Italia and Bloom Beauty — applying responsive design, animations, and dynamic JavaScript features like cart systems.</p>
+            </div>
+          </div>
+
+          <div class="journey__item fade-up" style="--delay: 0.1s">
+            <div class="journey__marker">
+              <span class="journey__icon">🧠</span>
+            </div>
+            <div class="journey__content">
+              <span class="journey__date">2025</span>
+              <h3>Expanded into programming &amp; logic-heavy projects</h3>
+              <p>Explored Python, Java, and data structures while building Peel &amp; Pin and NovaCalc — focusing on interaction design and computational logic.</p>
+            </div>
+          </div>
+
+          <div class="journey__item fade-up" style="--delay: 0.15s">
+            <div class="journey__marker">
+              <span class="journey__icon">🎯</span>
+            </div>
+            <div class="journey__content">
+              <span class="journey__date">Next</span>
+              <h3>Goal: Full-stack &amp; system design</h3>
+              <p>Currently working towards mastering backend development, databases, and system design to build complete, scalable software products.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         RESUME SECTION
+    ============================== -->
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="resume-card fade-up">
+          <div class="resume-card__text">
+            <p class="section__eyebrow">Resume</p>
+            <h2 class="section__title">Want the full picture?</h2>
+            <p>Download my complete resume to see my education, skills, and project experience in detail.</p>
+          </div>
+          <div class="resume-card__actions">
+            <!-- TODO: Replace CV.pdf with your actual resume file name in assets/resume/ -->
+            <a href="assets/resume/Nandini Resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener noreferrer">View CV</a>
+            <a href="assets/resume/Nandini Resume.pdf" class="btn btn--primary" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================
+         CONTACT SECTION
+    ============================== -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section__header fade-up">
+          <p class="section__eyebrow">Contact</p>
+          <h2 class="section__title">Let's build something together</h2>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info fade-up">
+            <p>
+              I'm open to internships, collaborations, and freelance opportunities.
+              Feel free to reach out — I usually respond within a day or two.
+            </p>
+
+            <ul class="contact__list">
+              <li>
+                <span class="contact__icon">✉️</span>
+                <div>
+                  <span class="contact__label">Email</span>
+                  <!-- TODO: Replace with your professional email -->
+                  <a href="mailto:your.email@example.com">officialworkmail04@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon">📍</span>
+                <div>
+                  <span class="contact__label">Location</span>
+                  <span>Jaipur,Rajasthan</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon">💼</span>
+                <div>
+                  <span class="contact__label">GitHub</span>
+                  <!-- TODO: Add your GitHub profile URL -->
+                  <a href="https://github.com/04nandini0" target="_blank" rel="noopener noreferrer">github.com/04nandini0</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact__icon">🔗</span>
+                <div>
+                  <span class="contact__label">LinkedIn</span>
+                  <!-- TODO: Add your LinkedIn profile URL -->
+                  <a href="https://www.linkedin.com/in/nandini-sharma-b525b0347" target="_blank" rel="noopener noreferrer">linkedin.com/in/nandini-sharma</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact__form fade-up" id="contact-form" novalidate style="--delay: 0.1s">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" autocomplete="name" />
+              <span class="form-error" data-error-for="name"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              <span class="form-error" data-error-for="email"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..."></textarea>
+              <span class="form-error" data-error-for="message"></span>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================
+       FOOTER
+  ============================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <!-- TODO: Replace "Your Name" with your actual name -->
+        <span class="navbar__logo-mark">&lt;NS/&gt;</span>
+        <p>Software Engineer building functional digital products.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__socials">
+        <!-- TODO: Add your GitHub profile URL -->
+        <a href="https://github.com/04nandini0" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.94 3.2 9.13 7.65 10.6.56.1.76-.24.76-.54 0-.27-.01-1.16-.02-2.1-3.11.68-3.77-1.32-3.77-1.32-.51-1.3-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.12.08 1.71 1.15 1.71 1.15.99 1.7 2.6 1.21 3.24.92.1-.72.39-1.21.71-1.49-2.48-.28-5.09-1.24-5.09-5.53 0-1.22.44-2.22 1.15-3-.12-.28-.5-1.42.11-2.96 0 0 .94-.3 3.08 1.15.89-.25 1.85-.37 2.8-.37.95 0 1.91.13 2.8.37 2.14-1.45 3.08-1.15 3.08-1.15.61 1.54.23 2.68.11 2.96.72.78 1.15 1.78 1.15 3 0 4.3-2.62 5.25-5.11 5.52.4.35.76 1.03.76 2.08 0 1.5-.01 2.71-.01 3.08 0 .3.2.65.76.54A11.26 11.26 0 0 0 23.25 11.75C23.25 5.48 18.27.5 12 .5Z"/></svg>
+        </a>
+        <!-- TODO: Add your LinkedIn profile URL -->
+        <a href="https://www.linkedin.com/in/nandini-sharma-b525b0347" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.95v5.66H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <!-- TODO: Replace with your professional email -->
+        <a href="officialworkmail04@gmail.com" aria-label="Send an email">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z" opacity="0"/><path d="M4 6h16v12H4z"/><path d="M4 6l8 7 8-7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <!-- TODO: Replace "Your Name" with your actual name -->
+      <p>&copy; <span id="current-year"></span> Nandini Sharma. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
